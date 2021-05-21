@@ -18,13 +18,30 @@ class DBHelper {
         
     }
     
-    //Adds a new customer to the database
-    func addCustomer(guestDataObject: [String:String]) {
+    //Adds a new customer to the database using emailID as identifier
+    func addCustomer(password: String, withEmailID username: String) {
         
         let customer = NSEntityDescription.insertNewObject(forEntityName: "Customer", into: context!) as! Customer
         
-        customer.username = guestDataObject["username"]
-        customer.password = guestDataObject["password"]
+        customer.username = username
+        customer.password = password
+        
+        do {
+            try context?.save()
+        } catch(let exception) {
+            print(exception.localizedDescription)
+        }
+        
+        
+    }
+    
+    //Adds a new customer to the database using phone number as identifier
+    func addCustomer(password: String, withPhone number: Int64) {
+        
+        let customer = NSEntityDescription.insertNewObject(forEntityName: "Customer", into: context!) as! Customer
+        
+        customer.phoneNumber = number
+        customer.password = password
         
         do {
             try context?.save()
@@ -36,7 +53,7 @@ class DBHelper {
     }
     
     //Returns the Customer object from the model with the specified username
-    func getCustomer(username: String) -> Customer {
+    func getCustomer(withEmailID username: String) -> Customer {
         var customer = Customer()
         let fetchReq = NSFetchRequest<NSManagedObject>(entityName:"Customer")
         fetchReq.predicate = NSPredicate(format: "username == %@", username)
@@ -56,8 +73,30 @@ class DBHelper {
         return customer
     }
     
-    //Updates the password of an existing customer in the database
-    func updateCustomer(_ username: String, withNewPassword password: String) {
+    //Returns the Customer object from the model with the specified phone number
+    func getCustomer(withPhone number: Int) -> Customer {
+        var customer = Customer()
+        let fetchReq = NSFetchRequest<NSManagedObject>(entityName:"Customer")
+        fetchReq.predicate = NSPredicate(format: "phoneNumber == %@", number)
+        fetchReq.fetchLimit = 1
+        
+        do {
+            let res = try context?.fetch(fetchReq) as! [Customer]
+            if (res.count != 0){
+                customer = res.first!
+            } else {
+                print("data not found")
+            }
+        } catch (let exception) {
+            print(exception.localizedDescription)
+        }
+        
+        return customer
+        
+    }
+    
+    //Updates the password of an existing customer in the database using that customer's email ID
+    func updatePasswordForCustomer(_ password: String, withEmailID username: String) {
         
         var customer = Customer()
         
@@ -76,26 +115,24 @@ class DBHelper {
         }
     }
     
-    func getOneCustomer (username : String)-> Customer { // checks for one specific instance of account credentials to see if it exists in coredata
-        var a : Customer?
-        let fetchReq = NSFetchRequest<NSFetchRequestResult>(entityName: "Customer")
-        fetchReq.predicate = NSPredicate(format: "username == %@", username)
+    //Updates the password of an existing customer in the database using that customer's phone number
+    func updatePasswordForCustomer(_ password: String, withPhone number: String) {
         
-        fetchReq.fetchLimit = 1
+        var customer = Customer()
+        
+        let fetchReq = NSFetchRequest<NSManagedObject>(entityName: "Customer")
+        fetchReq.predicate = NSPredicate(format: "phoneNumber == %@", number)
+        
         do {
-            let req = try context?.fetch(fetchReq) as! [Customer]
-            if(req.count != 0){
-                a = req.first!
+            let res = try context?.fetch(fetchReq)
+            if (res?.count != 0) {
+                customer = res?.first as! Customer
+                customer.password = password
+                try context?.save()
             }
-            else { // Customer data doesn't exist
-                print("Customer data not found.")
-            }
+        } catch {
+            print("error with fetching data or saving context")
         }
-        catch {
-            print("Error.")
-        }
-        
-        return a!
     }
     
     

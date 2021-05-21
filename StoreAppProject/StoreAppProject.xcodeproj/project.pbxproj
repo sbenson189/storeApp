@@ -29,6 +29,8 @@
 		84E3290E26582CA100AEE9A7 /* Customer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E3290C26582CA100AEE9A7 /* Customer+CoreDataProperties.swift */; };
 		BD10127939A6CC788578A5C7 /* Pods_StoreAppProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99798201EBC2FFA1251BDAF /* Pods_StoreAppProject.framework */; };
 		D99AE6E90BF8C08CC7EB93FA /* Pods_StoreAppProject_StoreAppProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF85B97BF5F254BFC425305 /* Pods_StoreAppProject_StoreAppProjectUITests.framework */; };
+		F4E6596A26582E8E0086BA6E /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6596926582E8E0086BA6E /* ForgotPasswordViewController.swift */; };
+		F4E65978265834D80086BA6E /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E65977265834D80086BA6E /* DBHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		AD379FDE2A7F337474EA362E /* Pods-StoreAppProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreAppProject.debug.xcconfig"; path = "Target Support Files/Pods-StoreAppProject/Pods-StoreAppProject.debug.xcconfig"; sourceTree = "<group>"; };
 		D68656A8A65BCFBABC2B72D9 /* Pods-StoreAppProject-StoreAppProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreAppProject-StoreAppProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-StoreAppProject-StoreAppProjectUITests/Pods-StoreAppProject-StoreAppProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E948060F9302CB7890C4AA8B /* Pods-StoreAppProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreAppProjectTests.release.xcconfig"; path = "Target Support Files/Pods-StoreAppProjectTests/Pods-StoreAppProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		F4E6596926582E8E0086BA6E /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		F4E65977265834D80086BA6E /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
 		FB9AF62BA1B55AC28D88E16B /* Pods-StoreAppProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreAppProject.release.xcconfig"; path = "Target Support Files/Pods-StoreAppProject/Pods-StoreAppProject.release.xcconfig"; sourceTree = "<group>"; };
 		FBF85B97BF5F254BFC425305 /* Pods_StoreAppProject_StoreAppProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoreAppProject_StoreAppProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -167,7 +171,12 @@
 				5E039458265801C7009639B7 /* LaunchScreen.storyboard */,
 				5E03945B265801C7009639B7 /* Info.plist */,
 				5E039453265801C5009639B7 /* StoreAppProject.xcdatamodeld */,
+
+				F4E6596926582E8E0086BA6E /* ForgotPasswordViewController.swift */,
+			
+
 				84E328FD26582B2500AEE9A7 /* DBHelper.swift */,
+
 			);
 			path = StoreAppProject;
 			sourceTree = "<group>";
@@ -431,6 +440,7 @@
 			files = (
 				84E3290D26582CA100AEE9A7 /* Customer+CoreDataClass.swift in Sources */,
 				5E03944F265801C5009639B7 /* ViewController.swift in Sources */,
+				F4E6596A26582E8E0086BA6E /* ForgotPasswordViewController.swift in Sources */,
 				5E039455265801C5009639B7 /* StoreAppProject.xcdatamodeld in Sources */,
 				5E039486265816DC009639B7 /* LandingPageViewController.swift in Sources */,
 				5E03944B265801C5009639B7 /* AppDelegate.swift in Sources */,
@@ -442,7 +452,11 @@
 				5E03944D265801C5009639B7 /* SceneDelegate.swift in Sources */,
 				84E3290E26582CA100AEE9A7 /* Customer+CoreDataProperties.swift in Sources */,
 				5E03948326580F0A009639B7 /* SignUpViewController.swift in Sources */,
+
+				F4E65978265834D80086BA6E /* DBHelper.swift in Sources */,
+
 				5E03948A2658184A009639B7 /* ItemViewController.swift in Sources */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

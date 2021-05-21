@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cJP-Dr-XFX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
+
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Forgot Password View Controller-->
         <scene sceneID="w6h-Dh-SxX">
             <objects>
-                <viewController id="7ne-fx-pDR" sceneMemberID="viewController">
+                <viewController id="7ne-fx-pDR" customClass="ForgotPasswordViewController" customModule="StoreAppProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VWC-eV-eV4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,6 +63,9 @@
                                         <integer key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="submit:" destination="7ne-fx-pDR" eventType="touchUpInside" id="dIb-ol-aKG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="K1v-Et-UK7"/>
@@ -81,6 +86,10 @@
                             <constraint firstItem="K1v-Et-UK7" firstAttribute="trailing" secondItem="wwV-Uh-upo" secondAttribute="trailing" constant="114" id="u6K-76-lK8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="password" destination="RuB-g6-nod" id="lMD-B6-IOs"/>
+                        <outlet property="username" destination="8iu-cR-We3" id="Yb5-Vf-IH7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KYt-HK-rCm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -227,6 +236,9 @@
                                         <integer key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="login:" destination="yDh-nK-7Qi" eventType="touchUpInside" id="l1s-LS-vWd"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shopping App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWM-Qr-Saq">
                                 <rect key="frame" x="41" y="146" width="332" height="73"/>
@@ -255,6 +267,9 @@
                                     <constraint firstAttribute="height" constant="30" id="AWw-jq-4xi"/>
                                 </constraints>
                                 <state key="normal" title="Click Here To Sign Up"/>
+                                <connections>
+                                    <segue destination="zDH-IU-9VZ" kind="presentation" modalPresentationStyle="fullScreen" id="pPN-jV-fK5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Xcb-DT-2m6"/>
@@ -286,7 +301,14 @@
                             <constraint firstItem="Xcb-DT-2m6" firstAttribute="trailing" secondItem="YWM-Qr-Saq" secondAttribute="trailing" constant="41" id="wbz-jB-Wrn"/>
                         </constraints>
                     </view>
+
+                    <connections>
+                        <outlet property="password" destination="40w-CQ-z27" id="4fQ-yQ-F6b"/>
+                        <outlet property="username" destination="onM-qt-oYH" id="C1e-gu-nHF"/>
+                    </connections>
+
                     <tabBarItem key="tabBarItem" title="Item" id="Sqk-Wj-cjq"/>
+
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lNn-hw-4Rd" sceneMemberID="firstResponder"/>
             </objects>
@@ -370,6 +392,9 @@
                                         <integer key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="submit:" destination="zDH-IU-9VZ" eventType="touchUpInside" id="vkv-E0-w0P"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7yT-GS-uPv">
                                 <rect key="frame" x="20" y="467" width="374" height="34"/>
@@ -411,6 +436,14 @@
                             <constraint firstItem="Buv-hS-Rlz" firstAttribute="leading" secondItem="U9o-al-gpv" secondAttribute="leading" constant="20" id="yUV-Ui-j1h"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="email" destination="dff-uk-kAu" id="RHm-Tf-Ixa"/>
+                        <outlet property="firstName" destination="Tdl-RA-QC3" id="Luh-pW-0Ds"/>
+                        <outlet property="lastName" destination="Buv-hS-Rlz" id="vO1-cz-t94"/>
+                        <outlet property="password" destination="7yT-GS-uPv" id="twO-fu-EeY"/>
+                        <outlet property="phoneNumber" destination="bAK-cb-p4a" id="pzf-JL-JiV"/>
+                        <outlet property="username" destination="PQD-Xe-ieY" id="38Y-mh-XcE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M2W-YL-hw3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

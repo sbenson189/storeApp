@@ -1,13 +1,13 @@
 //
-//  LoginPageViewController.swift
+//  ForgotPasswordViewController.swift
 //  StoreAppProject
 //
-//  Created by Scott Benson on 5/21/21.
+//  Created by Home on 5/21/21.
 //
 
 import UIKit
 
-class LoginPageViewController: UIViewController {
+class ForgotPasswordViewController: UIViewController {
 
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
@@ -17,9 +17,11 @@ class LoginPageViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func login(_ sender: Any) {
+    @IBAction func submit(_ sender: Any) {
+        
+        
     }
     
-  
+ 
 
 }

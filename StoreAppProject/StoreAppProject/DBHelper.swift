@@ -35,6 +35,27 @@ class DBHelper {
         
     }
     
+    //Returns the Customer object from the model with the specified username
+    func getCustomer(username: String) -> Customer {
+        var customer = Customer()
+        let fetchReq = NSFetchRequest<NSManagedObject>(entityName:"Customer")
+        fetchReq.predicate = NSPredicate(format: "username == %@", username)
+        fetchReq.fetchLimit = 1
+        
+        do {
+            let res = try context?.fetch(fetchReq) as! [Customer]
+            if (res.count != 0){
+                customer = res.first!
+            } else {
+                print("data not found")
+            }
+        } catch (let exception) {
+            print(exception.localizedDescription)
+        }
+        
+        return customer
+    }
+    
     //Updates the password of an existing customer in the database
     func updateCustomer(_ username: String, withNewPassword password: String) {
         
@@ -76,5 +97,7 @@ class DBHelper {
         
         return a!
     }
+    
+    
     
 }

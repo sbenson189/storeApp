@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,8 @@
 		5E03945A265801C7009639B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E039458265801C7009639B7 /* LaunchScreen.storyboard */; };
 		5E039465265801C7009639B7 /* StoreAppProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E039464265801C7009639B7 /* StoreAppProjectTests.swift */; };
 		5E039470265801C7009639B7 /* StoreAppProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E03946F265801C7009639B7 /* StoreAppProjectUITests.swift */; };
+		5E03948326580F0A009639B7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E03948126580F0A009639B7 /* SignUpViewController.swift */; };
+		5E03948426580F0A009639B7 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E03948226580F0A009639B7 /* LoginPageViewController.swift */; };
 		BD10127939A6CC788578A5C7 /* Pods_StoreAppProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99798201EBC2FFA1251BDAF /* Pods_StoreAppProject.framework */; };
 		D99AE6E90BF8C08CC7EB93FA /* Pods_StoreAppProject_StoreAppProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF85B97BF5F254BFC425305 /* Pods_StoreAppProject_StoreAppProjectUITests.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +58,8 @@
 		5E03946B265801C7009639B7 /* StoreAppProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoreAppProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E03946F265801C7009639B7 /* StoreAppProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreAppProjectUITests.swift; sourceTree = "<group>"; };
 		5E039471265801C7009639B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E03948126580F0A009639B7 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		5E03948226580F0A009639B7 /* LoginPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
 		8FFFCBF9552E12056D6DC65E /* Pods-StoreAppProject-StoreAppProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreAppProject-StoreAppProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-StoreAppProject-StoreAppProjectUITests/Pods-StoreAppProject-StoreAppProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A99798201EBC2FFA1251BDAF /* Pods_StoreAppProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoreAppProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD379FDE2A7F337474EA362E /* Pods-StoreAppProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreAppProject.debug.xcconfig"; path = "Target Support Files/Pods-StoreAppProject/Pods-StoreAppProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -103,7 +107,6 @@
 				41F6B83A7B8F3F76F07BFBB4 /* Pods-StoreAppProjectTests.debug.xcconfig */,
 				E948060F9302CB7890C4AA8B /* Pods-StoreAppProjectTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -136,6 +139,8 @@
 				5E03944C265801C5009639B7 /* SceneDelegate.swift */,
 				5E03944E265801C5009639B7 /* ViewController.swift */,
 				5E039450265801C5009639B7 /* Main.storyboard */,
+				5E03948226580F0A009639B7 /* LoginPageViewController.swift */,
+				5E03948126580F0A009639B7 /* SignUpViewController.swift */,
 				5E039456265801C7009639B7 /* Assets.xcassets */,
 				5E039458265801C7009639B7 /* LaunchScreen.storyboard */,
 				5E03945B265801C7009639B7 /* Info.plist */,
@@ -395,7 +400,9 @@
 				5E03944F265801C5009639B7 /* ViewController.swift in Sources */,
 				5E039455265801C5009639B7 /* StoreAppProject.xcdatamodeld in Sources */,
 				5E03944B265801C5009639B7 /* AppDelegate.swift in Sources */,
+				5E03948426580F0A009639B7 /* LoginPageViewController.swift in Sources */,
 				5E03944D265801C5009639B7 /* SceneDelegate.swift in Sources */,
+				5E03948326580F0A009639B7 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -558,7 +558,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="I9l-GP-Q4b">
-                                <rect key="frame" x="20" y="116" width="374" height="697"/>
+                                <rect key="frame" x="20" y="106" width="374" height="685"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oS0-Yo-RfO">
@@ -610,7 +610,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FmX-BB-9Sg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="942" y="78"/>
+            <point key="canvasLocation" x="940.57971014492762" y="77.678571428571431"/>
         </scene>
         <!--Dashboard-->
         <scene sceneID="WBb-sq-elZ">

@@ -19,6 +19,14 @@
 		5E039470265801C7009639B7 /* StoreAppProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E03946F265801C7009639B7 /* StoreAppProjectUITests.swift */; };
 		5E03948326580F0A009639B7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E03948126580F0A009639B7 /* SignUpViewController.swift */; };
 		5E03948426580F0A009639B7 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E03948226580F0A009639B7 /* LoginPageViewController.swift */; };
+		5E039486265816DC009639B7 /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E039485265816DC009639B7 /* LandingPageViewController.swift */; };
+		5E0394882658177F009639B7 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0394872658177F009639B7 /* CartViewController.swift */; };
+		5E03948A2658184A009639B7 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0394892658184A009639B7 /* ItemViewController.swift */; };
+		5E03948C265818AF009639B7 /* UserDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E03948B265818AF009639B7 /* UserDashboardViewController.swift */; };
+		5E03948E2658191D009639B7 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E03948D2658191D009639B7 /* CheckoutViewController.swift */; };
+		84E328FE26582B2500AEE9A7 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E328FD26582B2500AEE9A7 /* DBHelper.swift */; };
+		84E3290D26582CA100AEE9A7 /* Customer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E3290B26582CA100AEE9A7 /* Customer+CoreDataClass.swift */; };
+		84E3290E26582CA100AEE9A7 /* Customer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E3290C26582CA100AEE9A7 /* Customer+CoreDataProperties.swift */; };
 		BD10127939A6CC788578A5C7 /* Pods_StoreAppProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99798201EBC2FFA1251BDAF /* Pods_StoreAppProject.framework */; };
 		D99AE6E90BF8C08CC7EB93FA /* Pods_StoreAppProject_StoreAppProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF85B97BF5F254BFC425305 /* Pods_StoreAppProject_StoreAppProjectUITests.framework */; };
 		F4E6596A26582E8E0086BA6E /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E6596926582E8E0086BA6E /* ForgotPasswordViewController.swift */; };
@@ -62,6 +70,14 @@
 		5E039471265801C7009639B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E03948126580F0A009639B7 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		5E03948226580F0A009639B7 /* LoginPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
+		5E039485265816DC009639B7 /* LandingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
+		5E0394872658177F009639B7 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		5E0394892658184A009639B7 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		5E03948B265818AF009639B7 /* UserDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDashboardViewController.swift; sourceTree = "<group>"; };
+		5E03948D2658191D009639B7 /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		84E328FD26582B2500AEE9A7 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		84E3290B26582CA100AEE9A7 /* Customer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Customer+CoreDataClass.swift"; sourceTree = "<group>"; };
+		84E3290C26582CA100AEE9A7 /* Customer+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Customer+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		8FFFCBF9552E12056D6DC65E /* Pods-StoreAppProject-StoreAppProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreAppProject-StoreAppProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-StoreAppProject-StoreAppProjectUITests/Pods-StoreAppProject-StoreAppProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A99798201EBC2FFA1251BDAF /* Pods_StoreAppProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoreAppProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD379FDE2A7F337474EA362E /* Pods-StoreAppProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreAppProject.debug.xcconfig"; path = "Target Support Files/Pods-StoreAppProject/Pods-StoreAppProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +133,7 @@
 		5E03943E265801C5009639B7 = {
 			isa = PBXGroup;
 			children = (
+				84E3290226582C0F00AEE9A7 /* Model */,
 				5E039449265801C5009639B7 /* StoreAppProject */,
 				5E039463265801C7009639B7 /* StoreAppProjectTests */,
 				5E03946E265801C7009639B7 /* StoreAppProjectUITests */,
@@ -143,14 +160,23 @@
 				5E03944C265801C5009639B7 /* SceneDelegate.swift */,
 				5E03944E265801C5009639B7 /* ViewController.swift */,
 				5E039450265801C5009639B7 /* Main.storyboard */,
+				5E03948D2658191D009639B7 /* CheckoutViewController.swift */,
+				5E03948B265818AF009639B7 /* UserDashboardViewController.swift */,
+				5E0394892658184A009639B7 /* ItemViewController.swift */,
+				5E0394872658177F009639B7 /* CartViewController.swift */,
+				5E039485265816DC009639B7 /* LandingPageViewController.swift */,
 				5E03948226580F0A009639B7 /* LoginPageViewController.swift */,
 				5E03948126580F0A009639B7 /* SignUpViewController.swift */,
 				5E039456265801C7009639B7 /* Assets.xcassets */,
 				5E039458265801C7009639B7 /* LaunchScreen.storyboard */,
 				5E03945B265801C7009639B7 /* Info.plist */,
 				5E039453265801C5009639B7 /* StoreAppProject.xcdatamodeld */,
+
 				F4E6596926582E8E0086BA6E /* ForgotPasswordViewController.swift */,
-				F4E65977265834D80086BA6E /* DBHelper.swift */,
+			
+
+				84E328FD26582B2500AEE9A7 /* DBHelper.swift */,
+
 			);
 			path = StoreAppProject;
 			sourceTree = "<group>";
@@ -181,6 +207,15 @@
 				54C08D45BB921849EDAAAF6E /* Pods_StoreAppProjectTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84E3290226582C0F00AEE9A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84E3290B26582CA100AEE9A7 /* Customer+CoreDataClass.swift */,
+				84E3290C26582CA100AEE9A7 /* Customer+CoreDataProperties.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,14 +438,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E3290D26582CA100AEE9A7 /* Customer+CoreDataClass.swift in Sources */,
 				5E03944F265801C5009639B7 /* ViewController.swift in Sources */,
 				F4E6596A26582E8E0086BA6E /* ForgotPasswordViewController.swift in Sources */,
 				5E039455265801C5009639B7 /* StoreAppProject.xcdatamodeld in Sources */,
+				5E039486265816DC009639B7 /* LandingPageViewController.swift in Sources */,
 				5E03944B265801C5009639B7 /* AppDelegate.swift in Sources */,
+				5E0394882658177F009639B7 /* CartViewController.swift in Sources */,
+				5E03948E2658191D009639B7 /* CheckoutViewController.swift in Sources */,
 				5E03948426580F0A009639B7 /* LoginPageViewController.swift in Sources */,
+				84E328FE26582B2500AEE9A7 /* DBHelper.swift in Sources */,
+				5E03948C265818AF009639B7 /* UserDashboardViewController.swift in Sources */,
 				5E03944D265801C5009639B7 /* SceneDelegate.swift in Sources */,
+				84E3290E26582CA100AEE9A7 /* Customer+CoreDataProperties.swift in Sources */,
 				5E03948326580F0A009639B7 /* SignUpViewController.swift in Sources */,
+
 				F4E65978265834D80086BA6E /* DBHelper.swift in Sources */,
+
+				5E03948A2658184A009639B7 /* ItemViewController.swift in Sources */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,10 +640,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Revature.StoreAppProject;
+				PRODUCT_BUNDLE_IDENTIFIER = KH.StoreAppProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				TVOS_DEPLOYMENT_TARGET = 14.3;
 			};
 			name = Debug;
 		};
@@ -614,10 +661,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Revature.StoreAppProject;
+				PRODUCT_BUNDLE_IDENTIFIER = KH.StoreAppProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				TVOS_DEPLOYMENT_TARGET = 14.3;
 			};
 			name = Release;
 		};
@@ -640,6 +688,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StoreAppProject.app/StoreAppProject";
+				TVOS_DEPLOYMENT_TARGET = 14.3;
 			};
 			name = Debug;
 		};
@@ -662,6 +711,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StoreAppProject.app/StoreAppProject";
+				TVOS_DEPLOYMENT_TARGET = 14.3;
 			};
 			name = Release;
 		};
@@ -683,6 +733,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = StoreAppProject;
+				TVOS_DEPLOYMENT_TARGET = 14.3;
 			};
 			name = Debug;
 		};
@@ -704,6 +755,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = StoreAppProject;
+				TVOS_DEPLOYMENT_TARGET = 14.3;
 			};
 			name = Release;
 		};

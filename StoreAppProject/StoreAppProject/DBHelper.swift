@@ -2,8 +2,7 @@
 //  DBHelper.swift
 //  StoreAppProject
 //
-//  Created by Home on 5/21/21.
-//
+
 
 import Foundation
 import CoreData

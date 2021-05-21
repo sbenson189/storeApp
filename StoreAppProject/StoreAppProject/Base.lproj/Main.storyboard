@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cJP-Dr-XFX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
-
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -119,7 +117,7 @@
             </objects>
             <point key="canvasLocation" x="942" y="-664"/>
         </scene>
-        <!--Item-->
+        <!--Cart-->
         <scene sceneID="Fqv-qR-Qn6">
             <objects>
                 <viewController id="nZ8-uk-Np8" customClass="CartViewController" customModule="StoreAppProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -146,7 +144,7 @@
                         <viewLayoutGuide key="safeArea" id="qfA-WG-TC9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="UNr-R7-gKh"/>
+                    <tabBarItem key="tabBarItem" title="Cart" image="cart" catalog="system" id="UNr-R7-gKh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nw6-rx-DMZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -179,7 +177,6 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Q4b-30-CQx">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f4s-Xd-eiB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController id="cJP-Dr-XFX" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Jj3-n9-V8M">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -192,6 +189,7 @@
                         <segue destination="C7o-y7-3nU" kind="relationship" relationship="viewControllers" id="vTS-Il-9v6"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f4s-Xd-eiB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-226" y="78"/>
         </scene>
@@ -301,14 +299,11 @@
                             <constraint firstItem="Xcb-DT-2m6" firstAttribute="trailing" secondItem="YWM-Qr-Saq" secondAttribute="trailing" constant="41" id="wbz-jB-Wrn"/>
                         </constraints>
                     </view>
-
+                    <tabBarItem key="tabBarItem" title="Item" id="Sqk-Wj-cjq"/>
                     <connections>
                         <outlet property="password" destination="40w-CQ-z27" id="4fQ-yQ-F6b"/>
                         <outlet property="username" destination="onM-qt-oYH" id="C1e-gu-nHF"/>
                     </connections>
-
-                    <tabBarItem key="tabBarItem" title="Item" id="Sqk-Wj-cjq"/>
-
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lNn-hw-4Rd" sceneMemberID="firstResponder"/>
             </objects>
@@ -449,7 +444,7 @@
             </objects>
             <point key="canvasLocation" x="3767" y="-664"/>
         </scene>
-        <!--Item-->
+        <!--Products-->
         <scene sceneID="Puy-Q5-QtQ">
             <objects>
                 <viewController id="Z9a-IG-BP1" customClass="LandingPageViewController" customModule="StoreAppProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -511,13 +506,13 @@
                         <viewLayoutGuide key="safeArea" id="A6R-GH-iSz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Snc-rN-Ena"/>
+                    <tabBarItem key="tabBarItem" title="Products" image="bag" catalog="system" id="Snc-rN-Ena"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FmX-BB-9Sg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="942" y="78"/>
         </scene>
-        <!--Item-->
+        <!--Dashboard-->
         <scene sceneID="WBb-sq-elZ">
             <objects>
                 <viewController id="C7o-y7-3nU" customClass="UserDashboardViewController" customModule="StoreAppProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -536,7 +531,7 @@
                         <viewLayoutGuide key="safeArea" id="Zfh-UC-1mL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="EN6-UJ-5li"/>
+                    <tabBarItem key="tabBarItem" title="Dashboard" image="person" catalog="system" id="EN6-UJ-5li"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sdy-Zp-bkN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -568,6 +563,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bag" catalog="system" width="128" height="128"/>
+        <image name="cart" catalog="system" width="128" height="102"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

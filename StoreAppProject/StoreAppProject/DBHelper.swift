@@ -76,6 +76,27 @@ class DBHelper {
         }
     }
     
+    func getOneCustomer (username : String)-> Customer { // checks for one specific instance of account credentials to see if it exists in coredata
+        var a : Customer?
+        let fetchReq = NSFetchRequest<NSFetchRequestResult>(entityName: "Customer")
+        fetchReq.predicate = NSPredicate(format: "username == %@", username)
+        
+        fetchReq.fetchLimit = 1
+        do {
+            let req = try context?.fetch(fetchReq) as! [Customer]
+            if(req.count != 0){
+                a = req.first!
+            }
+            else { // Customer data doesn't exist
+                print("Customer data not found.")
+            }
+        }
+        catch {
+            print("Error.")
+        }
+        
+        return a!
+    }
     
     
     

@@ -139,7 +139,9 @@
 				5E039448265801C5009639B7 /* Products */,
 				401C1876FF595CB457E6A051 /* Pods */,
 				6B08CEEDE4C326099B04A44A /* Frameworks */,
+
 				84E329A926583F5100AEE9A7 /* Recovered References */,
+
 			);
 			sourceTree = "<group>";
 		};
@@ -214,7 +216,9 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+
 		84E329A926583F5100AEE9A7 /* Recovered References */ = {
+
 			isa = PBXGroup;
 			children = (
 				F4E65977265834D80086BA6E /* DBHelper.swift */,

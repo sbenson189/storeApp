@@ -26,7 +26,7 @@ class SignUpViewController: UIViewController {
         
         if (username.text!.isEmpty == false && password.text!.isEmpty == false) {
             let dic = ["firstName" : firstName.text, "lastName" : lastName.text]
-            DBHelper.inst.addCustomer(guestDataObject: dic as! [String:String])
+//            DBHelper.inst.addCustomer(guestDataObject: dic as! [String:String])
             let alert = UIAlertController(title: "Signed Up", message: "Account created.", preferredStyle: UIAlertController.Style.alert)
             
             // add an action (button)

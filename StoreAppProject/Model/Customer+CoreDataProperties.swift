@@ -18,7 +18,7 @@ extension Customer {
 
     @NSManaged public var username: String?
     @NSManaged public var password: String?
-
+    @NSManaged public var phoneNumber: Int64
 }
 
 extension Customer : Identifiable {

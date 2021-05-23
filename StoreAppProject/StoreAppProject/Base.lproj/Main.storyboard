@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cJP-Dr-XFX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yDh-nK-7Qi">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
-
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -39,15 +37,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RuB-g6-nod">
-                                <rect key="frame" x="20" y="243" width="374" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="374" id="hVK-cQ-xoI"/>
-                                    <constraint firstAttribute="height" constant="34" id="zV9-rj-idx"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwV-Uh-upo">
                                 <rect key="frame" x="114" y="333" width="186" height="45"/>
                                 <color key="backgroundColor" systemColor="linkColor"/>
@@ -72,22 +61,17 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="xz6-bl-boE" firstAttribute="leading" secondItem="K1v-Et-UK7" secondAttribute="leading" constant="20" id="09h-6U-VpJ"/>
-                            <constraint firstItem="K1v-Et-UK7" firstAttribute="trailing" secondItem="RuB-g6-nod" secondAttribute="trailing" constant="20" id="9EO-dW-0Oi"/>
                             <constraint firstItem="wwV-Uh-upo" firstAttribute="leading" secondItem="K1v-Et-UK7" secondAttribute="leading" constant="114" id="FfT-DB-JGk"/>
                             <constraint firstItem="xz6-bl-boE" firstAttribute="top" secondItem="K1v-Et-UK7" secondAttribute="top" constant="61" id="Ged-dd-NxP"/>
                             <constraint firstItem="K1v-Et-UK7" firstAttribute="trailing" secondItem="xz6-bl-boE" secondAttribute="trailing" constant="20" id="IRh-Nc-Vqo"/>
-                            <constraint firstItem="RuB-g6-nod" firstAttribute="leading" secondItem="K1v-Et-UK7" secondAttribute="leading" constant="20" id="J61-h5-16z"/>
-                            <constraint firstItem="wwV-Uh-upo" firstAttribute="top" secondItem="RuB-g6-nod" secondAttribute="bottom" constant="56" id="NXd-Pg-uf8"/>
                             <constraint firstItem="8iu-cR-We3" firstAttribute="leading" secondItem="K1v-Et-UK7" secondAttribute="leading" constant="20" id="fLE-OG-Pwf"/>
                             <constraint firstItem="8iu-cR-We3" firstAttribute="top" secondItem="xz6-bl-boE" secondAttribute="bottom" constant="22" id="hX2-IH-JES"/>
                             <constraint firstItem="K1v-Et-UK7" firstAttribute="trailing" secondItem="8iu-cR-We3" secondAttribute="trailing" constant="20" id="ieo-mC-K0b"/>
                             <constraint firstItem="K1v-Et-UK7" firstAttribute="bottom" secondItem="wwV-Uh-upo" secondAttribute="bottom" constant="484" id="jdq-Db-ElK"/>
-                            <constraint firstItem="RuB-g6-nod" firstAttribute="top" secondItem="8iu-cR-We3" secondAttribute="bottom" constant="12" id="kp0-pj-TkT"/>
                             <constraint firstItem="K1v-Et-UK7" firstAttribute="trailing" secondItem="wwV-Uh-upo" secondAttribute="trailing" constant="114" id="u6K-76-lK8"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="password" destination="RuB-g6-nod" id="lMD-B6-IOs"/>
                         <outlet property="username" destination="8iu-cR-We3" id="Yb5-Vf-IH7"/>
                     </connections>
                 </viewController>
@@ -179,7 +163,6 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Q4b-30-CQx">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f4s-Xd-eiB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController id="cJP-Dr-XFX" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Jj3-n9-V8M">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -192,6 +175,7 @@
                         <segue destination="C7o-y7-3nU" kind="relationship" relationship="viewControllers" id="vTS-Il-9v6"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f4s-Xd-eiB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-226" y="78"/>
         </scene>
@@ -271,6 +255,21 @@
                                     <segue destination="zDH-IU-9VZ" kind="presentation" modalPresentationStyle="fullScreen" id="pPN-jV-fK5"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ssH-ji-e18">
+                                <rect key="frame" x="196" y="473" width="177" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Forgot password?"/>
+                                <connections>
+                                    <segue destination="7ne-fx-pDR" kind="presentation" modalPresentationStyle="fullScreen" id="jev-2Q-Smh"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sgg-Aa-Jug">
+                                <rect key="frame" x="41" y="472" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="rememberLogin:" destination="yDh-nK-7Qi" eventType="valueChanged" id="eld-WT-jUY"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Xcb-DT-2m6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -301,18 +300,16 @@
                             <constraint firstItem="Xcb-DT-2m6" firstAttribute="trailing" secondItem="YWM-Qr-Saq" secondAttribute="trailing" constant="41" id="wbz-jB-Wrn"/>
                         </constraints>
                     </view>
-
+                    <tabBarItem key="tabBarItem" title="Item" id="Sqk-Wj-cjq"/>
                     <connections>
                         <outlet property="password" destination="40w-CQ-z27" id="4fQ-yQ-F6b"/>
+                        <outlet property="sw" destination="Sgg-Aa-Jug" id="pqi-G3-Szt"/>
                         <outlet property="username" destination="onM-qt-oYH" id="C1e-gu-nHF"/>
                     </connections>
-
-                    <tabBarItem key="tabBarItem" title="Item" id="Sqk-Wj-cjq"/>
-
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lNn-hw-4Rd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3767" y="78"/>
+            <point key="canvasLocation" x="3766.666666666667" y="77.678571428571431"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="bJz-mD-bVw">
@@ -520,7 +517,7 @@
         <!--Item-->
         <scene sceneID="WBb-sq-elZ">
             <objects>
-                <viewController id="C7o-y7-3nU" customClass="UserDashboardViewController" customModule="StoreAppProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="dashboard" id="C7o-y7-3nU" customClass="UserDashboardViewController" customModule="StoreAppProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="87k-fP-P4E">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

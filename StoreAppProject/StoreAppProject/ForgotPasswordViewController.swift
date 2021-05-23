@@ -18,7 +18,16 @@ class ForgotPasswordViewController: UIViewController {
     }
     
     @IBAction func submit(_ sender: Any) {
+        let data = DBHelper.inst.getCustomer(withEmailID: username.text!)
+        username.text = ""
+        // create the alert
+        let alert = UIAlertController(title: "Password Request", message: "Your password is \(data.password!)! Thank you for signing up with us.", preferredStyle: UIAlertController.Style.alert)
         
+        // add an action (button)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        
+        // show the alert
+        self.present(alert, animated: true, completion: nil)
         
     }
     

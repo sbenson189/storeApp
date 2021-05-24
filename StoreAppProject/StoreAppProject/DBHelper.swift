@@ -115,6 +115,7 @@ class DBHelper {
         }
     }
     
+
     //Updates the password of an existing customer in the database using that customer's phone number
     func updatePasswordForCustomer(_ password: String, withPhone number: String) {
         
@@ -136,5 +137,5 @@ class DBHelper {
     }
     
     
-    
+
 }

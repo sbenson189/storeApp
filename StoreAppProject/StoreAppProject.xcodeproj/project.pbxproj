@@ -95,7 +95,6 @@
 		D68656A8A65BCFBABC2B72D9 /* Pods-StoreAppProject-StoreAppProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreAppProject-StoreAppProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-StoreAppProject-StoreAppProjectUITests/Pods-StoreAppProject-StoreAppProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E948060F9302CB7890C4AA8B /* Pods-StoreAppProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreAppProjectTests.release.xcconfig"; path = "Target Support Files/Pods-StoreAppProjectTests/Pods-StoreAppProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		F4E6596926582E8E0086BA6E /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
-		F4E65977265834D80086BA6E /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
 		FB9AF62BA1B55AC28D88E16B /* Pods-StoreAppProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoreAppProject.release.xcconfig"; path = "Target Support Files/Pods-StoreAppProject/Pods-StoreAppProject.release.xcconfig"; sourceTree = "<group>"; };
 		FBF85B97BF5F254BFC425305 /* Pods_StoreAppProject_StoreAppProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoreAppProject_StoreAppProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -151,7 +150,9 @@
 				5E039448265801C5009639B7 /* Products */,
 				401C1876FF595CB457E6A051 /* Pods */,
 				6B08CEEDE4C326099B04A44A /* Frameworks */,
+
 				84E329A926583F5100AEE9A7 /* Recovered References */,
+
 			);
 			sourceTree = "<group>";
 		};
@@ -232,10 +233,12 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+
 		84E329A926583F5100AEE9A7 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
 				F4E65977265834D80086BA6E /* DBHelper.swift */,
+
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -479,8 +482,10 @@
 				84E329D42658591000AEE9A7 /* Customer+CoreDataProperties.swift in Sources */,
 				5E03948326580F0A009639B7 /* SignUpViewController.swift in Sources */,
 				5E03948A2658184A009639B7 /* ItemViewController.swift in Sources */,
+
 				5E60BDC826587ED500874292 /* AddPaymentOptionViewController.swift in Sources */,
 				84E329D32658591000AEE9A7 /* Customer+CoreDataClass.swift in Sources */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

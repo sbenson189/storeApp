@@ -3,6 +3,7 @@
    version = "1.0">
    <FileRef
       location = "group:/Users/scottbenson/Documents/StoreAppProject/StoreAppProject/StoreAppProject.xcodeproj">
+      location = "group:StoreAppProject.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

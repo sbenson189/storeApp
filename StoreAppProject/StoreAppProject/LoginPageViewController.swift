@@ -7,7 +7,10 @@
 
 import UIKit
 
-class LoginPageViewController: UIViewController,  UITextFieldDelegate {
+
+class LoginPageViewController: UIViewController , UITextFieldDelegate{
+
+
     var ud = UserDefaults.standard
     
     @IBOutlet weak var sw: UISwitch!
@@ -26,6 +29,7 @@ class LoginPageViewController: UIViewController,  UITextFieldDelegate {
     }
     
     @IBAction func login(_ sender: Any) {
+
         let cus = DBHelper.inst.getCustomer(withEmailID: username.text!)
         if (cus.username == nil || cus.password == nil){
             let alert = UIAlertController(title: "Wrong informations", message: "Enter a correct username or password", preferredStyle: UIAlertController.Style.alert)
@@ -61,6 +65,7 @@ class LoginPageViewController: UIViewController,  UITextFieldDelegate {
             ud.removeObject(forKey: "username")
             ud.removeObject(forKey: "password")
         }
+
     }
     
 

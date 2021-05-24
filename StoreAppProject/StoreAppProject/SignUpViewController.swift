@@ -22,6 +22,7 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func submit(_ sender: Any) {
+
         
           if (username.text!.isEmpty == false && password.text!.isEmpty == false) {
               let dic = ["username" : username.text, "password" : password.text]
@@ -52,6 +53,7 @@ class SignUpViewController: UIViewController {
         lastName.text = ""
         email.text = ""
         phoneNumber.text = ""
+
     }
     
   

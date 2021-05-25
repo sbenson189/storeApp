@@ -11,7 +11,19 @@
             </uniquenessConstraint>
         </uniquenessConstraints>
     </entity>
+    <entity name="PaymentMethod" representedClassName="PaymentMethod" syncable="YES">
+        <attribute name="accountNum" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cardNum" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="cvc" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="expDate" optional="YES" attributeType="Transformable"/>
+        <attribute name="firstName" attributeType="String"/>
+        <attribute name="lastName" attributeType="String"/>
+        <attribute name="routingNum" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="typeIndicator" attributeType="String"/>
+        <attribute name="zip" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
     <elements>
         <element name="Customer" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="PaymentMethod" positionX="-45" positionY="27" width="128" height="178"/>
     </elements>
 </model>

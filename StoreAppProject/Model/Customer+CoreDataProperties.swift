@@ -1,8 +1,8 @@
 //
 //  Customer+CoreDataProperties.swift
-//  StoreAppProject
+//  
 //
-//  Created by admin on 5/21/21.
+//  Created by admin on 5/25/21.
 //
 //
 
@@ -16,12 +16,8 @@ extension Customer {
         return NSFetchRequest<Customer>(entityName: "Customer")
     }
 
-    @NSManaged public var username: String?
     @NSManaged public var password: String?
     @NSManaged public var phoneNumber: Int64
-
-}
-
-extension Customer : Identifiable {
+    @NSManaged public var username: String?
 
 }
